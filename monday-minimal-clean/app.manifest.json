@@ -1,0 +1,36 @@
+{
+  "app_id": "monday-minimal-app",
+  "version": "1.0.0", 
+  "name": "Minimal Task Lister",
+  "description": "Simple Monday app to list all task names from a board",
+  "features": {
+    "board_view": {
+      "url": "/board-view"
+    },
+    "integrations": {
+      "triggers": [
+        {
+          "type": "monday.pulse.button.clicked",
+          "handler": "/integration/button-clicked"
+        }
+      ]
+    }
+  },
+  "hosting": {
+    "type": "monday-code"
+  },
+  "environment_variables": [
+    {
+      "name": "MONDAY_TOKEN",
+      "type": "secret",
+      "required": true,
+      "description": "Monday.com API token"
+    },
+    {
+      "name": "BOARD_ID", 
+      "type": "text",
+      "default": "9576217097",
+      "description": "Board ID to list tasks from"
+    }
+  ]
+}

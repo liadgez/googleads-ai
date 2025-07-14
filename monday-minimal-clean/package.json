@@ -1,0 +1,13 @@
+{
+  "name": "monday-minimal-app",
+  "version": "1.0.0",
+  "description": "Minimal Monday.com app with task listing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "monday-sdk-js": "^0.4.7"
+  }
+}

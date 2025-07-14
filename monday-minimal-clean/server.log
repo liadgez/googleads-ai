@@ -1,0 +1,32 @@
+🚀 Minimal Monday app running on port 8080
+📋 Board ID: 9576217097
+🔗 Webhook URL: https://d4fe9-service-4905568-eca6c204.us.monday.app/webhook/checkbox
+Fetching tasks from board: 9576217097
+Found 4 tasks
+🔔 Webhook request received: {
+  "boardId": "9576217097",
+  "pulseId": "9581080331",
+  "pulseName": "Webhook Test Milestone - 3:07:38 PM",
+  "columnId": "color_mksrcbaq",
+  "columnType": "color",
+  "value": {
+    "label": "Done",
+    "index": 1
+  }
+}
+📝 Column change detected:
+   Item: Webhook Test Milestone - 3:07:38 PM (ID: 9581080331)
+   Column: color_mksrcbaq (Type: color)
+   New Value: {"label":"Done","index":1}
+   Board: 9576217097
+🔍 Column analysis:
+   Column ID: color_mksrcbaq
+   Is Status Column: true
+   Column Type: color
+🏷️ Status change detected - Label: "done", Index: 1
+✅ Status set to DONE for item: Webhook Test Milestone - 3:07:38 PM - Status column "color_mksrcbaq" changed to "done" (index: 1)
+📁 Moving item to group: Done (group_mksrqg4j)
+✅ Item moved successfully via automation: {
+  data: { move_item_to_group: { id: '9581080331' } },
+  extensions: { request_id: '98096a1b-2191-9ec4-bafd-e3a66b55e1c6' }
+}
